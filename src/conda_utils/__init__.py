@@ -14,3 +14,7 @@ except PackageNotFoundError:  # pragma: no cover
     __version__ = "unknown"
 finally:
     del version, PackageNotFoundError
+
+from conda_utils.envfile import env_to_yaml
+
+__all__ = ["env_to_yaml"]
